@@ -1,0 +1,220 @@
+body {
+    color: #2B2A28;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    background: oklch(0.98 0.008 75) radial-gradient(oklch(0.94 0.01 70) 1px, transparent 1px) 0 0/22px 22px;
+    overflow-x: hidden;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    background-color: #aa0000;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section {
+    padding: 4rem 10rem 6rem 10rem;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem 1.25rem 3rem 1.25rem;
+    }
+}
+
+h2 {
+    font-family:'Cormorant Garamond';
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.row{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+
+.head-img{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    object-fit: cover;
+}
+.handwritten{
+    font-family: "Caveat";
+    color: #800000;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/*HOME-ABOUT*/
+.about-text {
+  flex: 0 0 66%; /* takes 2/3 of the space */
+  position: relative;
+}
+
+.about-image {
+  flex: 0 0 33%;
+  position: relative;
+}
+
+#profile-pic {
+  width: 100%;
+}
+
+.bg-underline {
+  background-image: url('img/watercolor.png');
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+/*NAVBAR*/
+
+.navbar-nav {
+  gap: 3rem; /* spacing between links */
+}
+
+.nav-link {
+  color: #800000 !important;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding: 0.7rem 0 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #C1694F !important;
+}
+
+/* active page indicator instead of Bootstrap's default */
+.nav-link.active {
+  color: #C1694F !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active::before {
+  content: '•';
+  color: #C1694F;
+  margin-right: 0.4rem;
+}
+
+.back-to-top{
+  background-color: #800000;
+  color: #ffffff;
+  border: 0;
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+/*HOME-PROJECTS*/
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.badge-group {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.badge-lang {
+  display: inline-block;
+  background-color: #800000;
+  color: #F7F3EC;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.card-body h5 {
+  margin: 0 0 0.5rem 0;
+}
+
+.github {
+  color: #800000;
+  margin-top: auto;
+}
+
+/*HOME-PAINTING*/
+.painting {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  transition: transform 0.3s ease;
+
+}
+
+.painting img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+}
+
+.painting img:hover{
+    animation: wiggle 0.5s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/*ABOUT*/
+h1{
+  font-family: "Caveat";
+  text-align: center;
+  padding: 6rem 10rem 2rem 10rem;
+  color: #800000;
+  font-size: 5rem;
+}
+
+footer{
+  background-color: #800000;
+  color: #F7F3EC;
+  text-align: center;
+  padding: 1rem;
+}
